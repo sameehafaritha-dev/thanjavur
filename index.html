@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EXPLORE TANJORE – Discover the Heritage of Tamil Nadu | Official Tourism & Culture Portal</title>
+  <meta name="description" content="Discover Tanjore (Thanjavur), Tamil Nadu. Explore Brihadeeswarar Temple, upcoming cultural festivals, royal palace, traditional art, Tanjore paintings, food, and latest tourism updates." />
+  <meta name="keywords" content="Tanjore, Thanjavur, Brihadeeswarar Temple, Big Temple, Tamil Nadu Tourism, Chola Heritage, Tanjore Paintings, Tyagaraja Aradhana, South India Travel" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Mukta+Malar:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome 6.5.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ==================== TOP ANNOUNCEMENT TICKER ==================== -->
+  <div class="top-ticker-bar">
+    <div class="container ticker-content">
+      <div class="ticker-left">
+        <span class="ticker-badge"><i class="fa-solid fa-bullhorn"></i> Live Updates</span>
+        <div class="ticker-text">
+          <span>ASI announces new warm golden eco-illumination at Brihadeeswarar Temple (6:30 PM – 8:45 PM) &bull; Free Battery Buggy Service for Senior Citizens at Sivaganga Gate &bull; Upcoming 180th Saint Tyagaraja Aradhana in Thiruvaiyaru &bull; Grand Pongal Celebrations at Big Temple</span>
+        </div>
+      </div>
+      <div class="ticker-right">
+        <div class="ticker-helpline"><i class="fa-solid fa-phone-volume"></i> 24x7 Tourist Helpline: 1800-4253-1111</div>
+        <div class="lang-indicator"><i class="fa-solid fa-language"></i> தமிழ் / English</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== SITE HEADER & NAVIGATION ==================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo" aria-label="Explore Tanjore Home">
+        <div class="brand-symbol">
+          <i class="fa-solid fa-gopuram"></i>
+        </div>
+        <div class="brand-text">
+          <div class="brand-title">EXPLORE <span>TANJORE</span></div>
+          <div class="brand-subtitle">Heritage of Tamil Nadu</div>
+        </div>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#attractions" class="nav-link">Attractions</a>
+        <a href="#events" class="nav-link">Events & Festivals</a>
+        <a href="#news" class="nav-link">Latest Updates</a>
+        <a href="#culture" class="nav-link">Culture & Art</a>
+        <a href="#food" class="nav-link">Food & Dining</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#travel-guide" class="nav-link">Travel Guide</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Actions (Wishlist & Planner) -->
+      <div class="header-actions">
+        <button class="btn-wishlist" id="openWishlistBtn" title="Saved Places & Itinerary">
+          <i class="fa-regular fa-heart"></i>
+          <span class="wishlist-count" id="wishlistCount">0</span>
+        </button>
+        <a href="#travel-guide" class="btn-plan-trip">
+          <i class="fa-solid fa-route"></i>
+          <span>Plan Trip</span>
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero-section" id="home">
+    <div class="hero-overlay-pattern"></div>
+    <div class="container hero-content">
+      <div class="hero-heritage-badge">
+        <i class="fa-solid fa-award"></i> UNESCO World Heritage Destination &bull; 1,000+ Years of Glory
+      </div>
+      <h1 class="hero-heading">
+        Explore Tanjore – <br /><span class="gold-text">Where History Meets Culture</span>
+      </h1>
+      <p class="hero-tagline">
+        Discover the Heritage, Experience the Tradition
+      </p>
+
+      <!-- Interactive Global Search Box -->
+      <div class="hero-search-wrapper">
+        <div class="hero-search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input
+            type="text"
+            class="hero-search-input"
+            id="heroSearchInput"
+            placeholder="Search places, festivals, food, or crafts (e.g., Big Temple, Pongal, Coffee, Dolls)..."
+            autocomplete="off"
+          />
+          <button class="hero-search-btn" id="heroSearchBtn">
+            <i class="fa-solid fa-compass"></i>
+            <span>Explore</span>
+          </button>
+        </div>
+        <!-- Live Instant Autocomplete Dropdown -->
+        <div class="search-results-dropdown" id="searchResultsDropdown"></div>
+      </div>
+
+      <!-- Hero Action Buttons -->
+      <div class="hero-cta-buttons">
+        <a href="#attractions" class="btn-cta-gold">
+          <i class="fa-solid fa-monument"></i>
+          <span>Explore Places</span>
+        </a>
+        <a href="#events" class="btn-cta-outline">
+          <i class="fa-solid fa-calendar-star"></i>
+          <span>Upcoming Events</span>
+        </a>
+        <a href="#news" class="btn-cta-maroon">
+          <i class="fa-solid fa-newspaper"></i>
+          <span>Latest Updates</span>
+        </a>
+      </div>
+
+      <!-- Quick Heritage Stats Bar -->
+      <div class="hero-stats-bar">
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-crown"></i></div>
+          <div>
+            <div class="stat-number">1010 CE</div>
+            <div class="stat-label">Chola Dynasty Legacy</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-gopuram"></i></div>
+          <div>
+            <div class="stat-number">216 Feet</div>
+            <div class="stat-label">Granite Vimana Tower</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-landmark-flag"></i></div>
+          <div>
+            <div class="stat-number">8+ Wonders</div>
+            <div class="stat-label">Iconic Heritage Monuments</div>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div>
+            <div class="stat-number">5 GI Tags</div>
+            <div class="stat-label">Art, Veena, Dolls & Silk</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 3: TOURIST ATTRACTIONS ==================== -->
+  <section class="section-padding" id="attractions">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-map-location-dot"></i> Sightseeing & Heritage</span>
+        <h2 class="section-title">Iconic Tourist Attractions in Tanjore</h2>
+        <p class="section-desc">
+          Immerse yourself in world-renowned architectural wonders, royal Maratha palaces, sacred river shrines, and serene parks crafted by visionary dynasties.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs-wrapper" id="attractionFilters">
+        <button class="filter-tab-btn active" data-filter="all">All Attractions</button>
+        <button class="filter-tab-btn" data-filter="unesco">UNESCO Heritage</button>
+        <button class="filter-tab-btn" data-filter="heritage">Palaces & Libraries</button>
+        <button class="filter-tab-btn" data-filter="temples">Spiritual Temples</button>
+        <button class="filter-tab-btn" data-filter="excursion">Day Excursions</button>
+        <button class="filter-tab-btn" data-filter="nature">Parks & Tanks</button>
+      </div>
+
+      <!-- Attractions Dynamic Grid -->
+      <div class="attractions-grid" id="attractionsGrid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 4: UPCOMING EVENTS AND FESTIVALS ==================== -->
+  <section class="section-padding-alt" id="events">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag tag-orange"><i class="fa-solid fa-calendar-days"></i> Celebrations & Culture</span>
+        <h2 class="section-title">Upcoming Cultural Events & Festivals</h2>
+        <p class="section-desc">
+          Witness living Tamil traditions—from grand temple car processions to celestial Carnatic music congregations and classical Bharatanatyam under the stars.
+        </p>
+      </div>
+
+      <!-- Month Selector & Event Bar -->
+      <div class="events-calendar-bar">
+        <div class="calendar-month-selector">
+          <span style="font-size: 0.88rem; font-weight: 700; color: var(--royal-blue);"><i class="fa-regular fa-calendar"></i> Month:</span>
+          <button class="calendar-month-btn active" data-month="all">All</button>
+          <button class="calendar-month-btn" data-month="January">Jan</button>
+          <button class="calendar-month-btn" data-month="February">Feb</button>
+          <button class="calendar-month-btn" data-month="April">Apr</button>
+          <button class="calendar-month-btn" data-month="August">Aug</button>
+          <button class="calendar-month-btn" data-month="November">Nov</button>
+          <button class="calendar-month-btn" data-month="December">Dec</button>
+        </div>
+        <div class="events-view-options">
+          <i class="fa-solid fa-circle-info" style="color: var(--terracotta-orange);"></i>
+          <span>Click "Add to Cal" for instant .ics download!</span>
+        </div>
+      </div>
+
+      <!-- Event Category Filter Tabs -->
+      <div class="filter-tabs-wrapper" id="eventCategoryFilters">
+        <button class="filter-tab-btn active" data-filter="all">All Events</button>
+        <button class="filter-tab-btn" data-filter="festival">Traditional Harvest Fests</button>
+        <button class="filter-tab-btn" data-filter="music">Classical Music & Dance</button>
+        <button class="filter-tab-btn" data-filter="temple">Temple Brahmotsavams</button>
+        <button class="filter-tab-btn" data-filter="art">Art & Craft Exhibitions</button>
+      </div>
+
+      <!-- Events Dynamic Grid -->
+      <div class="events-grid" id="eventsGrid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 5: LATEST NEWS AND UPDATES ==================== -->
+  <section class="section-padding" id="news">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag tag-maroon"><i class="fa-solid fa-bullhorn"></i> Official Announcements</span>
+        <h2 class="section-title">Latest Tourism News & City Updates</h2>
+        <p class="section-desc">
+          Stay informed with verified updates from the Archaeological Survey of India (ASI), District Administration, Southern Railway, and Tamil Nadu Tourism.
+        </p>
+      </div>
+
+      <!-- News Category Filter Tabs -->
+      <div class="filter-tabs-wrapper" id="newsFilters">
+        <button class="filter-tab-btn active" data-filter="all">All Updates</button>
+        <button class="filter-tab-btn" data-filter="Tourism Announcement">Tourism Announcements</button>
+        <button class="filter-tab-btn" data-filter="Tourist Facility">Visitor Facilities</button>
+        <button class="filter-tab-btn" data-filter="Cultural Programme">Cultural Programmes</button>
+        <button class="filter-tab-btn" data-filter="Public Infrastructure">Infrastructure & Transit</button>
+      </div>
+
+      <!-- News Dynamic Grid -->
+      <div class="news-grid" id="newsGrid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 6: TANJORE CULTURE AND HERITAGE ==================== -->
+  <section class="section-padding-alt" id="culture">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag tag-green"><i class="fa-solid fa-palette"></i> Living Traditions</span>
+        <h2 class="section-title">Tanjore Culture, Crafts & Heritage</h2>
+        <p class="section-desc">
+          Explore the world-famous artistic hallmarks of Thanjavur: 22k gold foil paintings, bobblehead dancing dolls, the Saraswati veena, and lost-wax Chola bronzes.
+        </p>
+      </div>
+
+      <!-- Culture Showcase Grid -->
+      <div class="culture-showcase-grid" id="cultureGrid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 7: FOOD AND RESTAURANTS ==================== -->
+  <section class="section-padding" id="food">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag tag-orange"><i class="fa-solid fa-utensils"></i> Authentic Delta Flavours</span>
+        <h2 class="section-title">Famous Traditional Food & Eateries</h2>
+        <p class="section-desc">
+          Savour the authentic culinary heritage of the Kaveri delta: fragrant banana leaf feasts, frothy Kumbakonam degree coffee, and warm melt-in-mouth Ashoka Halwa.
+        </p>
+      </div>
+
+      <!-- Food Dynamic Grid -->
+      <div class="food-grid" id="foodGrid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 8: PHOTO GALLERY ==================== -->
+  <section class="section-padding-alt" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-camera-retro"></i> Visual Journey</span>
+        <h2 class="section-title">Visual Glimpses of Tanjore</h2>
+        <p class="section-desc">
+          A high-definition photographic celebration of granite architecture, sacred festivals, royal treasures, and culinary delights. Click any photo to view in full lightbox.
+        </p>
+      </div>
+
+      <!-- Gallery Filter Tabs -->
+      <div class="filter-tabs-wrapper" id="galleryFilters">
+        <button class="filter-tab-btn active" data-filter="all">All Photos</button>
+        <button class="filter-tab-btn" data-filter="temples">Temples & Monuments</button>
+        <button class="filter-tab-btn" data-filter="heritage">Royal Art & Crafts</button>
+        <button class="filter-tab-btn" data-filter="festivals">Festivals & Celebrations</button>
+        <button class="filter-tab-btn" data-filter="food">Traditional Cuisine</button>
+        <button class="filter-tab-btn" data-filter="nature">Nature & Parks</button>
+      </div>
+
+      <!-- Gallery Masonry Grid -->
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Rendered dynamically by js/main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 9: TRAVEL GUIDE & ITINERARY ==================== -->
+  <section class="section-padding" id="travel-guide">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag tag-maroon"><i class="fa-solid fa-compass"></i> Trip Planning</span>
+        <h2 class="section-title">Complete Thanjavur Travel Guide</h2>
+        <p class="section-desc">
+          Everything you need for a smooth and memorable journey: connectivity options, curated day-by-day itineraries, season advisories, and sacred temple etiquettes.
+        </p>
+      </div>
+
+      <!-- Travel Guide Navigation Tabs -->
+      <div class="travel-tabs-nav">
+        <button class="travel-nav-btn active" data-target="pane-reach">
+          <i class="fa-solid fa-plane-arrival"></i> How to Reach
+        </button>
+        <button class="travel-nav-btn" data-target="pane-itineraries">
+          <i class="fa-solid fa-route"></i> Curated Itineraries
+        </button>
+        <button class="travel-nav-btn" data-target="pane-seasons">
+          <i class="fa-solid fa-sun"></i> Best Time to Visit
+        </button>
+        <button class="travel-nav-btn" data-target="pane-etiquette">
+          <i class="fa-solid fa-shield-halved"></i> Visitor Etiquette
+        </button>
+      </div>
+
+      <!-- Tab Pane 1: How to Reach -->
+      <div class="travel-tab-pane active" id="pane-reach">
+        <div class="reach-modes-grid" id="reachModesGrid">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+      <!-- Tab Pane 2: Curated Itineraries -->
+      <div class="travel-tab-pane" id="pane-itineraries">
+        <div class="itinerary-selector-row">
+          <button class="itinerary-btn active" data-id="itinerary-1day">1-Day Express Tour</button>
+          <button class="itinerary-btn" data-id="itinerary-2day">2-Day Cultural Immersion</button>
+          <button class="itinerary-btn" data-id="itinerary-3day">3-Day Grand Chola Circuit</button>
+        </div>
+        <div class="itinerary-timeline-container" id="itineraryTimeline">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+      <!-- Tab Pane 3: Best Time to Visit -->
+      <div class="travel-tab-pane" id="pane-seasons">
+        <div class="season-grid">
+          <div class="season-card">
+            <span class="season-badge">Peak Season</span>
+            <h3 class="season-title">Winter (October – March)</h3>
+            <div class="season-temp">20°C – 28°C</div>
+            <p class="season-desc">
+              Pleasant breezes and comfortable sunshine make winter ideal for walking tours, temple visits, and exploring outdoor monuments. Coincides with the Tyagaraja Aradhana (Jan) and Pongal.
+            </p>
+          </div>
+          <div class="season-card">
+            <span class="season-badge" style="background: var(--terracotta-orange);">Lush Delta</span>
+            <h3 class="season-title">Monsoon (July – September)</h3>
+            <div class="season-temp">24°C – 32°C</div>
+            <p class="season-desc">
+              The Kaveri delta flourishes with rich emerald paddy fields and full river channels. Intermittent refreshing showers bring scenic temple courtyard reflections and cooler evenings.
+            </p>
+          </div>
+          <div class="season-card">
+            <span class="season-badge" style="background: var(--maroon);">Festival Month</span>
+            <h3 class="season-title">Summer (April – June)</h3>
+            <div class="season-temp">30°C – 39°C</div>
+            <p class="season-desc">
+              Warm tropical weather. Perfect for early morning (6:00 AM – 9:00 AM) and sunset tours. Features the grand Chithirai Big Temple Car (Ther) festival drawing thousands of devotees.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Pane 4: Etiquette & Rules -->
+      <div class="travel-tab-pane" id="pane-etiquette">
+        <div class="reach-modes-grid">
+          <div class="reach-card">
+            <div class="reach-icon-box" style="background: #e0f2fe; color: #0284c7;">
+              <i class="fa-solid fa-shirt"></i>
+            </div>
+            <h3 class="reach-title">Temple Dress Code</h3>
+            <p class="reach-desc">
+              Traditional and modest attire is mandatory inside active temple precincts. Dhotis/formal trousers for men and sarees/salwars for women are standard. Shorts and sleeveless garments are prohibited.
+            </p>
+          </div>
+          <div class="reach-card">
+            <div class="reach-icon-box" style="background: #fef3c7; color: #d97706;">
+              <i class="fa-solid fa-shoe-prints"></i>
+            </div>
+            <h3 class="reach-title">Footwear Depositories</h3>
+            <p class="reach-desc">
+              Footwear must be deposited before entering the granite cloisters. Official free footwear counters with tokens are stationed right near the main eastern entrance of the Big Temple.
+            </p>
+          </div>
+          <div class="reach-card">
+            <div class="reach-icon-box" style="background: #fee2e2; color: #dc2626;">
+              <i class="fa-solid fa-camera-slash"></i>
+            </div>
+            <h3 class="reach-title">Photography Guidelines</h3>
+            <p class="reach-desc">
+              Photography is permitted in the open courtyards, outer gardens, and palace grounds. Photography inside the inner sanctum sanctorum (garbhagriha) of temples is strictly prohibited.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECTION 10: CONTACT & VISITOR INTERACTION ==================== -->
+  <section class="section-padding-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag tag-orange"><i class="fa-solid fa-headset"></i> Tourist Desk & Help</span>
+        <h2 class="section-title">Visitor Interaction & Enquiries</h2>
+        <p class="section-desc">
+          Plan your personalized visit, book certified heritage guides, check temple timings, or share your valuable traveler feedback with our heritage cell.
+        </p>
+      </div>
+
+      <div class="contact-layout-grid">
+        <!-- Tourist Enquiry & Guide Booking Form -->
+        <div class="enquiry-form-card">
+          <h3 class="form-heading">Tourist Assistance & Guide Booking</h3>
+          <p class="form-subheading">Fill in your travel details to receive a complimentary custom itinerary and official guide assistance.</p>
+          
+          <form id="touristEnquiryForm">
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="enqName">Your Name *</label>
+                <input type="text" id="enqName" class="form-control" placeholder="e.g., Sundar Raman" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="enqEmail">Email Address *</label>
+                <input type="email" id="enqEmail" class="form-control" placeholder="sundar@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="enqPhone">Phone / WhatsApp *</label>
+                <input type="tel" id="enqPhone" class="form-control" placeholder="+91 98765 43210" required />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="enqDate">Planned Visit Date</label>
+                <input type="date" id="enqDate" class="form-control" />
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label" for="enqPersons">Number of Travelers</label>
+                <select id="enqPersons" class="form-control">
+                  <option value="1-2">Solo / Couple (1–2)</option>
+                  <option value="3-5" selected>Family Group (3–5)</option>
+                  <option value="6-15">Tour Group (6–15)</option>
+                  <option value="16+">School / Academic Group (16+)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="enqInterest">Primary Interest</label>
+                <select id="enqInterest" class="form-control">
+                  <option value="heritage">Chola Architecture & History</option>
+                  <option value="festivals">Cultural Festivals & Classical Music</option>
+                  <option value="arts">Tanjore Paintings & Bronze Crafts</option>
+                  <option value="spiritual">Spiritual Temple Pilgrimage</option>
+                  <option value="all">Complete Tanjore Experience</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="enqMessage">Specific Requests / Questions</label>
+              <textarea id="enqMessage" class="form-control" placeholder="Tell us if you require battery buggies for seniors, guide languages (Tamil/English/Hindi/French), or specialized heritage research support..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit-enquiry">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Send Tourist Enquiry</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Sidebar: Helplines & Visitor Feedback -->
+        <div class="contact-sidebar">
+          <!-- Official Helplines Box -->
+          <div class="helpline-box">
+            <h4 class="helpline-title"><i class="fa-solid fa-shield-heart"></i> Official Tourist Helplines</h4>
+            <div class="helpline-list">
+              <div class="helpline-item">
+                <span class="helpline-label">Tourist Helpline (Toll-Free)</span>
+                <span class="helpline-num">1800-4253-1111</span>
+              </div>
+              <div class="helpline-item">
+                <span class="helpline-label">Thanjavur Police Control</span>
+                <span class="helpline-num">100 / 04362-230100</span>
+              </div>
+              <div class="helpline-item">
+                <span class="helpline-label">Tourist Police Assistance</span>
+                <span class="helpline-num">+91 94981 81216</span>
+              </div>
+              <div class="helpline-item">
+                <span class="helpline-label">Medical Emergency (Ambulance)</span>
+                <span class="helpline-num">108</span>
+              </div>
+              <div class="helpline-item">
+                <span class="helpline-label">Railway Enquiry (Thanjavur Jct)</span>
+                <span class="helpline-num">139</span>
+              </div>
+              <div class="helpline-item">
+                <span class="helpline-label">ASI Thanjavur Office</span>
+                <span class="helpline-num">04362-274476</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Traveler Feedback & Rating Widget -->
+          <div class="feedback-box">
+            <h4 class="feedback-title">Rate Your Tanjore Experience</h4>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">Have you visited Thanjavur recently? Share your rating with fellow travelers.</p>
+            
+            <div class="star-rating-select" id="starRating">
+              <span class="star selected" data-val="1">★</span>
+              <span class="star selected" data-val="2">★</span>
+              <span class="star selected" data-val="3">★</span>
+              <span class="star selected" data-val="4">★</span>
+              <span class="star selected" data-val="5">★</span>
+            </div>
+
+            <form id="feedbackForm">
+              <div class="form-group" style="margin-bottom: 10px;">
+                <input type="text" id="fbName" class="form-control" placeholder="Your name (optional)" style="padding: 8px 12px; font-size: 0.88rem;" />
+              </div>
+              <div class="form-group" style="margin-bottom: 12px;">
+                <textarea id="fbComment" class="form-control" placeholder="Share your experience (e.g. 'Loved the sunset lighting at Big temple and fresh degree coffee!')..." style="min-height: 80px; padding: 8px 12px; font-size: 0.88rem;" required></textarea>
+              </div>
+              <button type="submit" class="btn-cta-gold" style="width: 100%; padding: 10px; font-size: 0.9rem; justify-content: center;">
+                <i class="fa-solid fa-star"></i> Submit Traveler Review
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter Banner -->
+      <div class="newsletter-banner">
+        <div class="newsletter-info">
+          <h3>Subscribe to Tanjore Heritage Bulletins</h3>
+          <p>Get monthly notifications for upcoming festivals, art exhibitions, and special travel circuits directly in your inbox.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="Enter your email address..." required />
+          <button type="submit" class="btn-subscribe">
+            <i class="fa-solid fa-envelope-open-text"></i> Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand & Bio -->
+        <div class="footer-brand">
+          <h2>EXPLORE <span>TANJORE</span></h2>
+          <p class="footer-tagline">
+            Official heritage and cultural information gateway dedicated to the monumental legacy, temples, classical arts, and traditions of Thanjavur, Tamil Nadu, India.
+          </p>
+          <div class="footer-socials">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2: Top Attractions -->
+        <div>
+          <h4 class="footer-col-title">Top Attractions</h4>
+          <div class="footer-links-list">
+            <a href="#attractions" class="footer-link">Brihadeeswarar Temple</a>
+            <a href="#attractions" class="footer-link">Thanjavur Maratha Palace</a>
+            <a href="#attractions" class="footer-link">Saraswathi Mahal Library</a>
+            <a href="#attractions" class="footer-link">Schwartz Church</a>
+            <a href="#attractions" class="footer-link">Sivaganga Park & Tank</a>
+            <a href="#attractions" class="footer-link">Thiruvaiyaru & Kaveri</a>
+            <a href="#attractions" class="footer-link">Kumbakonam Mahamaham</a>
+          </div>
+        </div>
+
+        <!-- Col 3: Living Arts & Food -->
+        <div>
+          <h4 class="footer-col-title">Arts & Traditions</h4>
+          <div class="footer-links-list">
+            <a href="#culture" class="footer-link">Thanjavur 22k Gold Paintings</a>
+            <a href="#culture" class="footer-link">Dancing Bobblehead Dolls</a>
+            <a href="#culture" class="footer-link">Saraswati Veena Craft</a>
+            <a href="#culture" class="footer-link">Chola Lost-Wax Bronze</a>
+            <a href="#food" class="footer-link">Banana Leaf Feast (Elai Saapadu)</a>
+            <a href="#food" class="footer-link">Kumbakonam Degree Coffee</a>
+            <a href="#food" class="footer-link">Thiruvaiyaru Ashoka Halwa</a>
+          </div>
+        </div>
+
+        <!-- Col 4: Traveler Tools -->
+        <div>
+          <h4 class="footer-col-title">Visitor Resources</h4>
+          <div class="footer-links-list">
+            <a href="#travel-guide" class="footer-link">How to Reach Thanjavur</a>
+            <a href="#travel-guide" class="footer-link">Curated Itineraries</a>
+            <a href="#events" class="footer-link">Event Calendar & Festivals</a>
+            <a href="#news" class="footer-link">ASI & City Advisories</a>
+            <a href="#contact" class="footer-link">Emergency Helplines</a>
+            <a href="#contact" class="footer-link">Book Certified Guides</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div>
+          &copy; 2026 <strong>Explore Tanjore</strong> &bull; Department of Tourism & Cultural Promotion, Thanjavur, Tamil Nadu. All rights reserved.
+        </div>
+        <div style="font-family: var(--font-tamil); color: var(--temple-gold);">
+          யாதும் ஊரே யாவரும் கேளிர் &bull; To us all towns are our own, all people our kin.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== WISHLIST / SAVED PLACES DRAWER ==================== -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="wishlist-drawer" id="wishlistDrawer" aria-label="Saved Places Drawer">
+    <div class="drawer-header">
+      <div class="drawer-title"><i class="fa-solid fa-heart" style="color: var(--temple-gold); margin-right: 8px;"></i> Saved Trip Plan</div>
+      <button class="drawer-close-btn" id="closeWishlistBtn" aria-label="Close Drawer"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="drawer-body" id="wishlistItemsContainer">
+      <!-- Populated dynamically -->
+    </div>
+    <div class="drawer-footer">
+      <button class="btn-cta-gold" style="width: 100%; justify-content: center;" onclick="window.print()">
+        <i class="fa-solid fa-print"></i> Print / Save Itinerary
+      </button>
+    </div>
+  </aside>
+
+  <!-- ==================== DETAIL MODAL (Attractions, Events, News) ==================== -->
+  <div class="detail-modal" id="detailModal">
+    <div class="detail-modal-card">
+      <div class="modal-header-banner">
+        <img class="modal-header-img" id="modalBannerImg" src="" alt="Monument Detail" />
+        <button class="modal-close-icon" id="closeDetailModal" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="modal-header-info">
+          <h3 class="modal-title" id="modalTitle"></h3>
+        </div>
+      </div>
+      <div class="modal-body-scroll" id="modalBodyContent">
+        <!-- Injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== LIGHTBOX MODAL (Gallery) ==================== -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <span class="lightbox-close-btn" onclick="closeLightbox()">&times;</span>
+      <button class="lightbox-nav-btn lightbox-prev-btn" onclick="prevLightbox()"><i class="fa-solid fa-chevron-left"></i></button>
+      <img class="lightbox-img" id="lightboxImg" src="" alt="Gallery Preview" />
+      <button class="lightbox-nav-btn lightbox-next-btn" onclick="nextLightbox()"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+      <div class="lightbox-desc" id="lightboxDesc"></div>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- App Data and Main JavaScript Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
